@@ -1,6 +1,6 @@
 touch .gitignore
 git config --global user.name Harry
-git config --global user.email youremail@example.com
+hi harry bhai big fan name ariyo
 git init
 git add .
 git commit -m "Initial Commit"
