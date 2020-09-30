@@ -2,6 +2,7 @@ const express = require("express");
 const path = require("path"); 
 const app = express();
 const mongoose = require('mongoose');
+const MongoClient = require('mongodb').MongoClient; //npm i mongodb
 const bodyparser = require("body-parser");
 
 mongoose.connect('mongodb://localhost/contactDance', {useNewUrlParser: true});
@@ -46,6 +47,20 @@ app.post('/contact', (req, res)=>{
     }).catch(()=>{
         res.status(400).send("Item was not saved to the database")
     });
+    
+
+app.get('/members', (req, res, next) => {
+    MongoClient.connect('mongodb://localhost:27017/', function(err, db) {
+        if (err) throw err;
+        var dbo = db.db("Contact");
+        dbo.collection("contacts").find({}).toArray(function(err, result) {
+          if (err) throw err;
+          //console.log(result);
+          res.status(200).render('members.pug', {result:result})  
+          db.close();
+        });
+      }); 
+});   
 
     // res.status(200).render('contact.pug');
 })
