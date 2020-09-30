@@ -1,3 +1,5 @@
+Such a amazing website. It's Awesome!!😉
+
 touch .gitignore
 git config --global user.name Harry
 git config --global user.email youremail@example.com
