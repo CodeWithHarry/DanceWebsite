@@ -7,7 +7,6 @@ const bodyparser = require("body-parser");
 mongoose.connect('mongodb://localhost/contactDance', {useNewUrlParser: true});
 const port = 8000;
 
-
 // Define mongoose schema
 var contactSchema = new mongoose.Schema({
     name: String,
@@ -50,7 +49,7 @@ app.post('/contact', (req, res)=>{
     // res.status(200).render('contact.pug');
 })
 
-// START THE SERVER
+// START THE SERVER AND IMPORTED CODE
 app.listen(port, ()=>{
     console.log(`The application started successfully on port ${port}`);
 });
