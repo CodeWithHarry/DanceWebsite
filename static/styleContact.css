@@ -48,3 +48,7 @@ h1{
     outline: none;
     margin: 26px;
 }
+.btn:hover{
+    background-color:blue;
+    color:yellow;
+}
