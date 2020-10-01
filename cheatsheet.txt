@@ -9,3 +9,5 @@ ssh-keygen -t rsa -b 4096 -C "youremail@example.com"
 tail <path to id_rsa.pub> # Add this key to your GitHub account
 git remote add orign <ssh url.git>
 git push origin master
+
+Just learn it
