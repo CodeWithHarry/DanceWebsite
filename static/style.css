@@ -56,7 +56,7 @@ height: 42px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    font-family: 'ZCOOL QingKe HuangYou';
+    font-family: 'ZCOOL QingKe HuangYou',italic;
     font-size: 65px;
     align-items: center;
     background: center/cover no-repeat url("/static/bg.jpg") ;
