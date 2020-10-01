@@ -10,12 +10,12 @@
 
 h1{
     text-align: center;
-    margin: 12px 0;
+    margin-top: 13px 0;
 }
 
 .container{
-    min-height: 77vh;
-    margin: 43px 0;
+    min-height: 78vh;
+    margin: 50px 0;
 }
 .container h1{
     font-family: 'ZCOOL QingKe HuangYou';
@@ -29,20 +29,20 @@ h1{
 }
 
 .myInput{
-    font-size: 16px;
-    width: 40%;
-    padding: 9px;
+    font-size: 17px;
+    width: 46%;
+    padding: 10px;
     margin: 8px;
     border: 2px solid #9d8e8e;
     border-radius: 12px;
     outline: none;
 }
 .btn{
-    padding: 8px 16px;
+    padding: 8px 16px 9px 17px;
     font-size: 18px;
     border: 2px solid black;
     border-radius: 10px;
-    color: white;
+    color: #ff12aa;
     background: #d43b3b;
     cursor: pointer;
     outline: none;
