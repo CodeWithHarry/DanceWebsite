@@ -17,6 +17,13 @@ var contactSchema = new mongoose.Schema({
     desc: String
   });
 
+
+// Middleware
+app.use((req, res, next)=>{
+    res.status(404);
+});
+
+// Making Model from Schema
 var Contact = mongoose.model('Contact', contactSchema);
 
 // EXPRESS SPECIFIC STUFF
