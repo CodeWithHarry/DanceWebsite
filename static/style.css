@@ -9,10 +9,10 @@
 
 #logo{
     display: flex;
-    color: white;
+    color: rgba(255, 255, 255, 0.556);
     align-items: center;
-    margin: 0 14px;
-    font-size: 28px;
+    margin: 0 15px;
+    font-size: 29px;
     margin-right: 40px;
 }
 
@@ -70,8 +70,8 @@ height: 42px;
 
 
 #missionSection{
-    height: 326px;; 
-    width: 67%;
+    height: 329px;; 
+    width: 68%;
     margin: auto;
     
 }
@@ -88,7 +88,7 @@ height: 42px;
     border: 2px solid black;
     border-radius: 10px;
     width: 30%;
-    margin: 23px 20px;
+    margin: 23px 21px;
     height: 209px;
 }
 .card h3{
