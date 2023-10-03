@@ -9,10 +9,10 @@
 
 #logo{
     display: flex;
-    color: white;
+    color: rgba(255, 255, 255, 0.556);
     align-items: center;
-    margin: 0 14px;
-    font-size: 28px;
+    margin: 0 15px;
+    font-size: 29px;
     margin-right: 40px;
 }
 
