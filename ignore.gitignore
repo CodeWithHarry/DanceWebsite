@@ -1,0 +1,2 @@
+echo "*.log" > .gitignore
+echo "temp/" >> .gitignore
