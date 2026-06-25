@@ -1,45 +1,48 @@
 extends base.pug
 
-block scripts
-  script(src='/static/index.js')
+block title
+  | Ava Dance Academy
 
-block style
-    style
-      include ../static/style.css
+block content
+  section#introSection
+    .intro-copy
+      h1 Welcome to Ava's Dance Academy
+      p Eat Sleep Dance Repeat
+      a.btn(href="/contact") Join a class
 
-block content 
-    section#introSection
-        div Welcome to Harry's Dance Academy
-        div.small Eat Sleep Dance Repeat
+  section#missionSection
+    h2 Our Mission
+    .card-row
+      .card
+        h3 Dance Perfection
+        p We help every student grow with confidence, rhythm and joy.
+      .card
+        h3 Dance Your Way
+        p Group classes, private coaching and fun choreography for everyone.
+      .card
+        h3 Expert Teaching
+        p Learn from experienced instructors who love teaching movement.
 
-    section#missionSection
-        h2 Our Mission
-        div.card
-            h3 Dance Perfection
-            div.card-box
-                div.card-img
-                    img(src="/static/img/1.png")
-                div.card-content
-                    p This is the best dance academy of the universe
-        div.card
-            h3 Dance the way you like
-            div.card-box
-                div.card-img
-                    img(src="/static/img/2.png")
-                div.card-content
-                    p This is the best dance academy of the universe
-        div.card
-            h3 Expert Teaching
-            div.card-box
-                div.card-img
-                    img(src="/static/img/3.png")
-                div.card-content
-                    p This is the best dance academy of the universe
+  section#programsSection
+    h2 Our Programs
+    .feature-grid
+      .feature
+        img(src="/static/img/1.png", alt="Performance training")
+        h3 Performance Training
+        p Stage-ready choreography and rehearsal support for beginners and performers.
+      .feature
+        img(src="/static/img/2.png", alt="Creative dance")
+        h3 Creative Dance
+        p Expressive classes designed to build confidence, coordination, and flow.
+      .feature
+        img(src="/static/img/3.png", alt="Technique")
+        h3 Technique & Fitness
+        p Strength, flexibility, and rhythm training in every session.
 
-    section#sponsorsSection
-        h2 Our Sponsors
-        div#sponsors 
-            img(src="/static/img/logo1.png", alt="Sponsor Image", class="spImage")
-            img(src="/static/img/logo2.png", alt="Sponsor Image", class="spImage")
-            img(src="/static/img/logo3.png", alt="Sponsor Image", class="spImage")
-            img(src="/static/img/logo4.png", alt="Sponsor Image", class="spImage")
+  section#sponsorsSection
+    h2 Trusted By Sponsors
+    div#sponsors
+      img(src="/static/img/logo1.png", alt="Sponsor 1", class="spImage")
+      img(src="/static/img/logo2.png", alt="Sponsor 2", class="spImage")
+      img(src="/static/img/logo3.png", alt="Sponsor 3", class="spImage")
+      img(src="/static/img/logo4.png", alt="Sponsor 4", class="spImage")

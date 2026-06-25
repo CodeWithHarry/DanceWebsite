@@ -1,50 +1,96 @@
-
 @import url('https://fonts.googleapis.com/css?family=Yeon+Sung|ZCOOL+QingKe+HuangYou&display=swap');
 
-*{
-    margin: 0;
-    box-sizing: border-box;
-    padding: 0;
-    
+.container {
+  max-width: 760px;
+  margin: 48px auto;
+  padding: 0 20px;
 }
 
-h1{
-    text-align: center;
-    margin: 12px 0;
+.container h1 {
+  text-align: center;
+  font-size: 2.8rem;
+  margin-bottom: 24px;
 }
 
-.container{
-    min-height: 77vh;
-    margin: 43px 0;
-}
-.container h1{
-    font-family: 'ZCOOL QingKe HuangYou';
-    font-size: 34px;
-}
-.myForm{
-    display: flex;
-    flex-direction: column; 
-    justify-content: center;
-    align-items: center; 
+.status-message {
+  border-radius: 14px;
+  padding: 16px 18px;
+  margin-bottom: 24px;
+  text-align: center;
+  font-size: 1rem;
 }
 
-.myInput{
-    font-size: 16px;
-    width: 40%;
-    padding: 9px;
-    margin: 8px;
-    border: 2px solid #9d8e8e;
-    border-radius: 12px;
-    outline: none;
+.status-message.success {
+  background: #d4f9dc;
+  color: #1f5f29;
 }
-.btn{
-    padding: 8px 16px;
-    font-size: 18px;
-    border: 2px solid black;
-    border-radius: 10px;
-    color: white;
-    background: #d43b3b;
-    cursor: pointer;
-    outline: none;
-    margin: 26px;
+
+.status-message.error {
+  background: #fde2e2;
+  color: #8c1c1c;
+}
+
+.myForm {
+  display: grid;
+  gap: 18px;
+}
+
+.form-row {
+  display: grid;
+  gap: 10px;
+}
+
+.myInput {
+  width: 100%;
+  min-height: 52px;
+  padding: 14px 16px;
+  border-radius: 14px;
+  border: 2px solid #d2d2d2;
+  font-size: 1rem;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.myInput:focus,
+textarea.myInput:focus {
+  border-color: #d43b3b;
+  box-shadow: 0 0 0 4px rgba(212, 59, 59, 0.14);
+  outline: none;
+}
+
+textarea.myInput {
+  min-height: 160px;
+  resize: vertical;
+}
+
+.input-error {
+  border-color: #d43b3b;
+}
+
+.error {
+  color: #b02a2a;
+  font-size: 0.95rem;
+}
+
+.btn {
+  width: fit-content;
+  padding: 14px 28px;
+  border: 2px solid #111;
+  border-radius: 12px;
+  background: #111;
+  color: white;
+  cursor: pointer;
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.btn:hover,
+.btn:focus {
+  background: white;
+  color: #d43b3b;
+  transform: translateY(-2px);
+}
+
+@media screen and (max-width: 740px) {
+  .btn {
+    width: 100%;
+  }
 }
