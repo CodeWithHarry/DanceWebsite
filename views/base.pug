@@ -1,21 +1,33 @@
 doctype html
 html
   head
-    title Harry Dance Academy
-    block scripts
-    block style 
+    meta(charset="utf-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    block title
+    title
+      if title
+        = title
+      else
+        | Ava Dance Academy
+    link(rel="stylesheet", href="/static/style.css")
+    block style
   body
-    nav#navbar
-        ul
-            div#logo
-                img(src="/static/img/logo.png")
-                | HDA
-            li #[a(href="/") Home]
-            li #[a(href="/") About]
-            li #[a(href="/") Services]
-            li #[a(href="/") Class Info]
-            li #[a(href="/contact") Contact Us]
-            
-    block content
+    header
+      nav#navbar
+        .nav-top
+          a#logo(href="/")
+            img(src="/static/img/logo.png", alt="HDA logo")
+            span HDA
+          button#menuToggle(type="button", aria-label="Toggle navigation") ☰
+        ul#navList
+          li: a(href="/") Home
+          li: a(href="/about") About
+          li: a(href="/services") Services
+          li: a(href="/classes") Class Info
+          li: a(href="/contact") Contact Us
+    main
+      block content
     footer#footer
-        | Copyright © 2019 HarryDanceAcademy.com | All rights reserved
+      p Copyright © 2019 AvaDanceAcademy.com | All rights reserved
+    script(src="/static/index.js")
+    block scripts
